@@ -12,3 +12,7 @@ provider "github" {
   owner = "khrapovs"
 }
 
+resource "github_repository" "order-book-matching-engine" {
+  name        = "OrderBookMatchingEngine"
+  description = "Simple Python implementation of order book matching engine"
+}
