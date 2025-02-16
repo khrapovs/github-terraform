@@ -20,3 +20,8 @@ resource "github_repository" "order-book-matching-engine" {
   has_issues             = true
   has_wiki               = true
 }
+
+resource "github_branch" "main" {
+  repository = github_repository.order-book-matching-engine.name
+  branch     = "main"
+}
