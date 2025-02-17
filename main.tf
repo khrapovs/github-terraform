@@ -25,3 +25,8 @@ resource "github_branch" "main" {
   repository = github_repository.order-book-matching-engine.name
   branch     = "main"
 }
+
+resource "github_branch_default" "branch_default" {
+  repository = github_repository.order-book-matching-engine.name
+  branch     = github_branch.main.branch
+}
