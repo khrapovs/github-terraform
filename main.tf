@@ -38,7 +38,7 @@ resource "github_repository_ruleset" "main_branch" {
   enforcement = "active"
 
   bypass_actors {
-    actor_id    = 4
+    actor_id    = 5
     actor_type  = "RepositoryRole"
     bypass_mode = "always"
   }
